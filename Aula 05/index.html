@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 05</title>
+</head>
+<body>
+    <h1>Principais Formatações</h1>
+    <h2>Negrito / Destaque</h2>
+    <p>Na frase temos uma <b>parte do texto em negrito</b> usando a tag B (não semantica)</p>
+    <p>Na frase temos uma <strong>parte do texto em negrito</strong> usando a tag strong (com semântica)</p>
+    <h1>Itálico / Ênfase</h1>
+    <p>Nesta frase vamos entrar com uma palavra em <i>Itálico</i> usando a tag i  (não semãntica)</p>
+    <p>Nesta frase vamos entrar com uma palávra em <em>Itálico</em> usando a tag EM (com semântica)</p>
+<h1>Texto Marcador</h1>
+<p>Aqui vamos usar um texto em destaque <mark>de marcador de texto</mark></p>
+<p>Aqui vamos usar um texto em destaque <mark style="background-color: green">de marcador de texto</mark></p>
+<h1>Texto grande e pequeno</h1>
+<p>Estamos trabalhando aqui com um texto <big>grande</big> e um <small>texto pequeno</small> nesta frase</p>
+<h1>Texto deletado</h1>
+<p>Neste parágrafo vamos trabalhar com um texto <del>que foi excluido</del> da frase (forma semântica)</p>
+<h1>Texto Inserido</h1>
+<p>Nesta frase vamos demonstrar como <ins>destacar um texto inserido</ins> na frase de forma semântica</p>
+<p>Nesta frase vamos demonstrar como <u>destacar um texto inserido</u> na frase de forma não semântica</p>
+<h1>Texto sobrescrito</h1>
+<p>Vamos demonstrar uma fórmula da equação de segundo grau a<sup>2</sup> + bx + c = 0 usando a tag sup</p>
+<h1>Texto Subescrito</h1>
+<p>Vamos demonstrar o texto subescrito com a fórmula da água H<sub>2</sub>O</p>
+<h1>Trecho de código fonte</h1>
+<p>Neste exemplo vou demonstrar um trecho de código inserindo o comando <code>document.getElementById('edtCodigo')</code> que é um comando java script inserindo um longo codigo em python:</p>
+<pre>
+<code>
+import numpy as np
+import pandas as pd
+from scipy import stats
+
+# Criando um DataFrame de exemplo
+data = {'valor': [10, 12, 13, 15, 100, 17, 18, 20, 19, 200]}
+df = pd.DataFrame(data)
+
+# Calculando o Z-score
+z_scores = np.abs(stats.zscore(df['valor']))
+
+# Definindo um limite para o Z-score (por exemplo, 3)
+threshold = 3
+
+# Removendo os outliers
+df_clean = df[z_scores < threshold]
+
+print(df_clean)
+</code>
+</pre>
+<h1>Citações (quotation) simples</h1>
+<p>Segundo Steve Jobs <q>A tecnologia move o mundo</q></p>
+<h1>Citações completa (livros)</h1>
+<p>Segundo Sandra kussunoki no seu livro A dança e o ventre:</p>
+<blockquote>Dados existentes sobre intervenções cirúrgicas nos corpos contemporâneos visando à obtenção de um corpo mais próximo do padrão estético tais como lipoaspiração, próteses de silicone, entre outras, comprovam essa busca obsessiva pelo ideal de perfeição, que é baseadoo principalmente na magreza.</blockquote>
+<h1>Abreviações</h1>
+<p>Estamos estudando <abbr title="Hypertext Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr></p>
+<h1>Texto Invertido</h1>
+<p>Estou estudando HTML</p>
+<p><bdo dir="rtl">Estou estudando HTML</bdo></p>
+</body>
+</html>
